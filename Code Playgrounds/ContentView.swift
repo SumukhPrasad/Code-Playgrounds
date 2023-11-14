@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let MIN_HEIGHT = CGFloat(250)
+
 struct ContentView: View {
     
     @State var windowTitleString: String = "Code Playgrounds"
@@ -16,9 +18,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            TextEditor(text: $code)
-                .foregroundStyle(.secondary)
-                .monospaced()
+            EditorView(code: $code)
             
             HStack(
                     alignment: .top,
@@ -29,7 +29,7 @@ struct ContentView: View {
                     }
                     .floatingPanel(isPresented: $showingPanel, content: {
                         ZStack {
-                            VisualEffectView(material: .sidebar, blendingMode: .behindWindow)
+                            VisualEffectView(material: .hudWindow, blendingMode: .behindWindow)
                         }
                     })
                 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C870E222B03278A00140FFA /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C870E212B03278A00140FFA /* EditorView.swift */; };
 		8CBA37C62B026C1000A9CE88 /* Code_PlaygroundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */; };
 		8CBA37C82B026C1000A9CE88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37C72B026C1000A9CE88 /* ContentView.swift */; };
 		8CBA37CA2B026C1200A9CE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBA37C92B026C1200A9CE88 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C870E212B03278A00140FFA /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		8CBA37C22B026C1000A9CE88 /* Code Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code Playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_PlaygroundsApp.swift; sourceTree = "<group>"; };
 		8CBA37C72B026C1000A9CE88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C870E202B03277700140FFA /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				8C870E212B03278A00140FFA /* EditorView.swift */,
+			);
+			path = EditorView;
+			sourceTree = "<group>";
+		};
+		8C870E232B0327A700140FFA /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */,
+				8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */,
+			);
+			path = FloatingPanel;
+			sourceTree = "<group>";
+		};
 		8CBA37B92B026C1000A9CE88 = {
 			isa = PBXGroup;
 			children = (
@@ -107,14 +126,14 @@
 		8CBA37C42B026C1000A9CE88 /* Code Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				8C870E232B0327A700140FFA /* FloatingPanel */,
+				8C870E202B03277700140FFA /* EditorView */,
 				8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */,
 				8CBA37C72B026C1000A9CE88 /* ContentView.swift */,
 				8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */,
 				8CBA37C92B026C1200A9CE88 /* Assets.xcassets */,
 				8CBA37CE2B026C1200A9CE88 /* Code_Playgrounds.entitlements */,
 				8CBA37CB2B026C1200A9CE88 /* Preview Content */,
-				8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */,
-				8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */,
 			);
 			path = "Code Playgrounds";
 			sourceTree = "<group>";
@@ -280,6 +299,7 @@
 				8CBA37FD2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37C82B026C1000A9CE88 /* ContentView.swift in Sources */,
 				8CBA37F92B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
+				8C870E222B03278A00140FFA /* EditorView.swift in Sources */,
 				8CBA37C62B026C1000A9CE88 /* Code_PlaygroundsApp.swift in Sources */,
 				8CBA37F52B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
 			);
