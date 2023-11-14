@@ -18,9 +18,10 @@ struct PrefView: View {
                     Label("General", systemImage: "gear")
                 }
                 .tag(Tabs.general)
+            
         }
         .padding(20)
-        .frame(width: 750, height: 640)
+        .frame(width: 750)
     }
 }
 

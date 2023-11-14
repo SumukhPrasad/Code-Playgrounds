@@ -11,9 +11,10 @@ import CodeEditor
 struct ContentView: View {
     
     @State private var code = ""
-    @State private var cons = "CONSOLE GOES HERE"
     @State var showingPanel = false
     @State private var lang = CodeEditor.Language.swift
+    
+    @State private var command = ""
     
     var body: some View {
         VStack {
@@ -35,31 +36,29 @@ struct ContentView: View {
                     })
                 }.padding(10)
             
-            TextEditor(text: $cons)
-                .foregroundStyle(.secondary)
-                .monospaced()
-                .frame(minHeight: 200)
         }.frame(minWidth: 640)
         
         .toolbar {
-            Text("Language:")
-            
-            Picker("Language", selection: $lang) {
-              ForEach(CodeEditor.availableLanguages) { language in
-                Text("\(language.rawValue.capitalized)")
-                  .tag(language)
-              }
+            HStack {
+                Text("Highlight:")
+                
+                Picker("Highlight", selection: $lang) {
+                  ForEach(CodeEditor.availableLanguages) { language in
+                    Text("\(language.rawValue.capitalized)")
+                      .tag(language)
+                  }
+                }
+                
+                TextField("Command", text: $command).monospaced()
+                
+                Button(action: {}) {
+                    Label("Run", systemImage: "hammer")
+                }
             }
             
-            Button(action: {})
-            {
-                Label("Run", systemImage: "hammer")
-            }
-            
-            Button(action: {})
-            {
+            /*Button(action: {}) {
                 Label("Open REPL", systemImage: "apple.terminal")
-            }
+            }*/
         }
         
     }

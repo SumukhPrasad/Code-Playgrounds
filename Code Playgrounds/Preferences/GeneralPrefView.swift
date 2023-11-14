@@ -29,7 +29,7 @@ struct GeneralPrefView: View {
                     .tag(theme)
                 }
             }
-            CodeEditor(source: $source, language: .swift, theme: editorTheme).frame(minWidth: 375, minHeight: 400)
+            CodeEditor(source: $source, language: .swift, theme: editorTheme).frame(width: 375, height: 400)
         }
         
     }
