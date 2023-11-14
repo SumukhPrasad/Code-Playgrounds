@@ -14,6 +14,15 @@
 		8CBA37D82B026C1200A9CE88 /* Code_PlaygroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37D72B026C1200A9CE88 /* Code_PlaygroundsTests.swift */; };
 		8CBA37E22B026C1200A9CE88 /* Code_PlaygroundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37E12B026C1200A9CE88 /* Code_PlaygroundsUITests.swift */; };
 		8CBA37E42B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37E32B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift */; };
+		8CBA37F52B027D8D00A9CE88 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */; };
+		8CBA37F62B027D8D00A9CE88 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */; };
+		8CBA37F72B027D8D00A9CE88 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */; };
+		8CBA37F92B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */; };
+		8CBA37FA2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */; };
+		8CBA37FB2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */; };
+		8CBA37FD2B027F4300A9CE88 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */; };
+		8CBA37FE2B027F4300A9CE88 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */; };
+		8CBA37FF2B027F4300A9CE88 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,9 @@
 		8CBA37DD2B026C1200A9CE88 /* Code PlaygroundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code PlaygroundsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBA37E12B026C1200A9CE88 /* Code_PlaygroundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_PlaygroundsUITests.swift; sourceTree = "<group>"; };
 		8CBA37E32B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_PlaygroundsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; tabWidth = 5; usesTabs = 1; };
+		8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Modifier+FloatingPanel.swift"; sourceTree = "<group>"; };
+		8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +109,12 @@
 			children = (
 				8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */,
 				8CBA37C72B026C1000A9CE88 /* ContentView.swift */,
+				8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */,
 				8CBA37C92B026C1200A9CE88 /* Assets.xcassets */,
 				8CBA37CE2B026C1200A9CE88 /* Code_Playgrounds.entitlements */,
 				8CBA37CB2B026C1200A9CE88 /* Preview Content */,
+				8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */,
+				8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */,
 			);
 			path = "Code Playgrounds";
 			sourceTree = "<group>";
@@ -192,6 +207,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
@@ -259,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBA37FD2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37C82B026C1000A9CE88 /* ContentView.swift in Sources */,
+				8CBA37F92B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
 				8CBA37C62B026C1000A9CE88 /* Code_PlaygroundsApp.swift in Sources */,
+				8CBA37F52B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBA37F62B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
+				8CBA37FE2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37D82B026C1200A9CE88 /* Code_PlaygroundsTests.swift in Sources */,
+				8CBA37FA2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBA37FF2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37E42B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift in Sources */,
+				8CBA37FB2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
 				8CBA37E22B026C1200A9CE88 /* Code_PlaygroundsUITests.swift in Sources */,
+				8CBA37F72B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +456,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Code Playgrounds";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +485,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Code Playgrounds";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
