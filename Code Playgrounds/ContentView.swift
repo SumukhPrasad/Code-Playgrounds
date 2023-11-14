@@ -6,25 +6,26 @@
 //
 
 import SwiftUI
-
-let MIN_HEIGHT = CGFloat(250)
+import CodeEditor
 
 struct ContentView: View {
     
-    @State var windowTitleString: String = "Code Playgrounds"
-    @State private var lang = 1
     @State private var code = ""
+    @State private var cons = "CONSOLE GOES HERE"
     @State var showingPanel = false
+    @State private var lang = CodeEditor.Language.swift
     
     var body: some View {
         VStack {
-            EditorView(code: $code)
+            EditorView(code: $code, language: $lang).frame(minHeight: 480)
             
             HStack(
-                    alignment: .top,
+                    alignment: .center,
                     spacing: 10
                 ) {
-                    Button("panel") {
+                    Text("")
+                    Spacer()
+                    Button("show panel") {
                         showingPanel.toggle()
                     }
                     .floatingPanel(isPresented: $showingPanel, content: {
@@ -32,20 +33,22 @@ struct ContentView: View {
                             VisualEffectView(material: .hudWindow, blendingMode: .behindWindow)
                         }
                     })
-                }
+                }.padding(10)
             
-            TextEditor(text: $code)
+            TextEditor(text: $cons)
                 .foregroundStyle(.secondary)
                 .monospaced()
-        }
+                .frame(minHeight: 200)
+        }.frame(minWidth: 640)
         
         .toolbar {
-            Text(windowTitleString)
+            Text("Language:")
             
-            Picker(selection: $lang, label: Text("Language"))
-            {
-                Text("Python").tag(1)
-                Text("Swift").tag(2)
+            Picker("Language", selection: $lang) {
+              ForEach(CodeEditor.availableLanguages) { language in
+                Text("\(language.rawValue.capitalized)")
+                  .tag(language)
+              }
             }
             
             Button(action: {})

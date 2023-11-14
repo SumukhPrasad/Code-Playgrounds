@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8C870E222B03278A00140FFA /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C870E212B03278A00140FFA /* EditorView.swift */; };
+		8C870E262B033CCB00140FFA /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 8C870E252B033CCB00140FFA /* CodeEditor */; };
+		8C870E292B03644500140FFA /* PrefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C870E282B03644500140FFA /* PrefView.swift */; };
+		8C870E2B2B0364CC00140FFA /* GeneralPrefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C870E2A2B0364CC00140FFA /* GeneralPrefView.swift */; };
 		8CBA37C62B026C1000A9CE88 /* Code_PlaygroundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */; };
 		8CBA37C82B026C1000A9CE88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37C72B026C1000A9CE88 /* ContentView.swift */; };
 		8CBA37CA2B026C1200A9CE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBA37C92B026C1200A9CE88 /* Assets.xcassets */; };
@@ -45,8 +48,10 @@
 
 /* Begin PBXFileReference section */
 		8C870E212B03278A00140FFA /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		8C870E282B03644500140FFA /* PrefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefView.swift; sourceTree = "<group>"; };
+		8C870E2A2B0364CC00140FFA /* GeneralPrefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPrefView.swift; sourceTree = "<group>"; };
 		8CBA37C22B026C1000A9CE88 /* Code Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code Playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_PlaygroundsApp.swift; sourceTree = "<group>"; };
+		8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = Code_PlaygroundsApp.swift; sourceTree = "<group>"; tabWidth = 5; usesTabs = 1; };
 		8CBA37C72B026C1000A9CE88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CBA37C92B026C1200A9CE88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CBA37CC2B026C1200A9CE88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C870E262B033CCB00140FFA /* CodeEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +109,15 @@
 			path = FloatingPanel;
 			sourceTree = "<group>";
 		};
+		8C870E272B03643000140FFA /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				8C870E282B03644500140FFA /* PrefView.swift */,
+				8C870E2A2B0364CC00140FFA /* GeneralPrefView.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		8CBA37B92B026C1000A9CE88 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +141,7 @@
 		8CBA37C42B026C1000A9CE88 /* Code Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				8C870E272B03643000140FFA /* Preferences */,
 				8C870E232B0327A700140FFA /* FloatingPanel */,
 				8C870E202B03277700140FFA /* EditorView */,
 				8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */,
@@ -179,6 +195,9 @@
 			dependencies = (
 			);
 			name = "Code Playgrounds";
+			packageProductDependencies = (
+				8C870E252B033CCB00140FFA /* CodeEditor */,
+			);
 			productName = "Code Playgrounds";
 			productReference = 8CBA37C22B026C1000A9CE88 /* Code Playgrounds.app */;
 			productType = "com.apple.product-type.application";
@@ -254,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 8CBA37B92B026C1000A9CE88;
+			packageReferences = (
+				8C870E242B033CCA00140FFA /* XCRemoteSwiftPackageReference "CodeEditor" */,
+			);
 			productRefGroup = 8CBA37C32B026C1000A9CE88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,7 +322,9 @@
 				8CBA37C82B026C1000A9CE88 /* ContentView.swift in Sources */,
 				8CBA37F92B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
 				8C870E222B03278A00140FFA /* EditorView.swift in Sources */,
+				8C870E292B03644500140FFA /* PrefView.swift in Sources */,
 				8CBA37C62B026C1000A9CE88 /* Code_PlaygroundsApp.swift in Sources */,
+				8C870E2B2B0364CC00140FFA /* GeneralPrefView.swift in Sources */,
 				8CBA37F52B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +656,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C870E242B033CCA00140FFA /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/CodeEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C870E252B033CCB00140FFA /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C870E242B033CCA00140FFA /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CBA37BA2B026C1000A9CE88 /* Project object */;
 }

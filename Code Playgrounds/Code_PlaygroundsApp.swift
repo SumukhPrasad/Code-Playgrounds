@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Code_PlaygroundsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			ContentView()
+		}
+
+		#if os(macOS)
+			Settings {
+				PrefView()
+			}
+		#endif
+	}
 }
