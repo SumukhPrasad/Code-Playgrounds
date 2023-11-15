@@ -49,9 +49,9 @@ struct ContentView: View {
                   }
                 }
                 
-                TextField("Command", text: $command).monospaced()
+                TextField("Command", text: $command).monospaced().textFieldStyle(.roundedBorder).disableAutocorrection(true)
                 
-                Button(action: {}) {
+                Button(action: runCode) {
                     Label("Run", systemImage: "hammer")
                 }
             }
@@ -61,6 +61,25 @@ struct ContentView: View {
             }*/
         }
         
+    }
+}
+
+private extension ContentView {
+    func runCode() {
+        guard !code.isEmpty else {
+            return
+        }
+        
+        guard !command.isEmpty else {
+            return
+        }
+        
+        let fileURL: URL? = createTemporaryTextFile(content: code)
+        
+        if (fileURL != nil) {
+            print("clear; \(command) \(fileURL!)")
+            executeCommandInNewTerminal(command: "clear; pwd; \(command) \(fileURL!)")
+        }
     }
 }
 

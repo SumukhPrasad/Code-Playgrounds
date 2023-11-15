@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6FDEAD2B04524A00B689B0 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FDEAC2B04524A00B689B0 /* Runner.swift */; };
+		8C6FDEAF2B049E0100B689B0 /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FDEAE2B049E0100B689B0 /* Saver.swift */; };
 		8C870E222B03278A00140FFA /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C870E212B03278A00140FFA /* EditorView.swift */; };
 		8C870E262B033CCB00140FFA /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 8C870E252B033CCB00140FFA /* CodeEditor */; };
 		8C870E292B03644500140FFA /* PrefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C870E282B03644500140FFA /* PrefView.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C6FDEAC2B04524A00B689B0 /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		8C6FDEAE2B049E0100B689B0 /* Saver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
 		8C870E212B03278A00140FFA /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		8C870E282B03644500140FFA /* PrefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefView.swift; sourceTree = "<group>"; };
 		8C870E2A2B0364CC00140FFA /* GeneralPrefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPrefView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C6FDEAB2B04523B00B689B0 /* CommandRunner */ = {
+			isa = PBXGroup;
+			children = (
+				8C6FDEAC2B04524A00B689B0 /* Runner.swift */,
+				8C6FDEAE2B049E0100B689B0 /* Saver.swift */,
+			);
+			path = CommandRunner;
+			sourceTree = "<group>";
+		};
 		8C870E202B03277700140FFA /* EditorView */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +154,7 @@
 		8CBA37C42B026C1000A9CE88 /* Code Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				8C6FDEAB2B04523B00B689B0 /* CommandRunner */,
 				8C870E272B03643000140FFA /* Preferences */,
 				8C870E232B0327A700140FFA /* FloatingPanel */,
 				8C870E202B03277700140FFA /* EditorView */,
@@ -321,9 +335,11 @@
 				8CBA37FD2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37C82B026C1000A9CE88 /* ContentView.swift in Sources */,
 				8CBA37F92B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
+				8C6FDEAD2B04524A00B689B0 /* Runner.swift in Sources */,
 				8C870E222B03278A00140FFA /* EditorView.swift in Sources */,
 				8C870E292B03644500140FFA /* PrefView.swift in Sources */,
 				8CBA37C62B026C1000A9CE88 /* Code_PlaygroundsApp.swift in Sources */,
+				8C6FDEAF2B049E0100B689B0 /* Saver.swift in Sources */,
 				8C870E2B2B0364CC00140FFA /* GeneralPrefView.swift in Sources */,
 				8CBA37F52B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
 			);
