@@ -75,10 +75,13 @@ private extension ContentView {
         }
         
         let fileURL: URL? = createTemporaryTextFile(content: code)
+        let strURL = fileURL?.absoluteString
+        let idx = (strURL?.index(strURL?.startIndex ?? "".startIndex, offsetBy: 7))!
         
+        let computedFileURL = strURL?[idx...]
         if (fileURL != nil) {
-            print("clear; \(command) \(fileURL!)")
-            executeCommandInNewTerminal(command: "clear; pwd; \(command) \(fileURL!)")
+            print("clear; \(command) \(computedFileURL ?? "!!!!!")")
+            executeCommandInNewTerminal(command: "clear; \(command) \(computedFileURL!)")
         }
     }
 }

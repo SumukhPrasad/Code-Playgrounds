@@ -16,12 +16,14 @@ func executeCommandInNewTerminal(command: String) {
     end tell
     """
     
+    print("Trying to execute\n\(script)")
+
     var error: NSDictionary?
     if let scriptObject = NSAppleScript(source: script) {
         if let output: NSAppleEventDescriptor? = scriptObject.executeAndReturnError(&error) {
-            print(output!.stringValue)
+            print(output?.stringValue ?? "no value in output")
         } else if (error != nil) {
-            print("error: \(error)")
+            print("error: \(String(describing: error))")
         }
     }
 }
