@@ -7,6 +7,20 @@
 
 import Foundation
 
+func createTemporarySHFile(content: String, command: String) -> URL? {
+    let textfilePath = createTemporaryTextFile(content: content)
+    
+    let strURL = textfilePath?.absoluteString
+    let idx = (strURL?.index(strURL?.startIndex ?? "".startIndex, offsetBy: 7))!
+    
+    let computedFileURL = strURL?[idx...]
+    
+    let filePath = createTemporaryTextFile(content: "\(command) \(computedFileURL!)")
+
+    return filePath
+}
+
+
 func createTemporaryTextFile(content: String) -> URL? {
     do {
         let tempDirectory = FileManager.default.temporaryDirectory

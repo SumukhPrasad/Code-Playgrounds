@@ -9,10 +9,11 @@ import Foundation
 
 func executeCommandInNewTerminal(command: String) {
     
-    
-    let script = """
+    /*let script = """
     tell application "Terminal"
-        do script "\(command)"
+        activate
+        delay 1
+        do script "ls"
     end tell
     """
     
@@ -25,5 +26,8 @@ func executeCommandInNewTerminal(command: String) {
         } else if (error != nil) {
             print("error: \(String(describing: error))")
         }
-    }
+    }*/
+    
+    print(command)
+    
 }

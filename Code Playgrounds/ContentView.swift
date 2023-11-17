@@ -12,9 +12,9 @@ struct ContentView: View {
     
     @State private var code = ""
     @State var showingPanel = false
-    @State private var lang = CodeEditor.Language.swift
+    @State private var lang = CodeEditor.Language.python
     
-    @State private var command = ""
+    @State private var command = "python3"
     
     var body: some View {
         VStack {
@@ -24,7 +24,6 @@ struct ContentView: View {
                     alignment: .center,
                     spacing: 10
                 ) {
-                    Text("")
                     Spacer()
                     Button("show panel") {
                         showingPanel.toggle()
@@ -74,14 +73,13 @@ private extension ContentView {
             return
         }
         
-        let fileURL: URL? = createTemporaryTextFile(content: code)
+        let fileURL: URL? = createTemporarySHFile(content: code, command: command)
         let strURL = fileURL?.absoluteString
         let idx = (strURL?.index(strURL?.startIndex ?? "".startIndex, offsetBy: 7))!
         
         let computedFileURL = strURL?[idx...]
         if (fileURL != nil) {
-            print("clear; \(command) \(computedFileURL ?? "!!!!!")")
-            executeCommandInNewTerminal(command: "clear; \(command) \(computedFileURL!)")
+            executeCommandInNewTerminal(command: "sh \(computedFileURL!)")
         }
     }
 }
