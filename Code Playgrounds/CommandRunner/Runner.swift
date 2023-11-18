@@ -9,24 +9,15 @@ import Foundation
 
 func executeCommandInNewTerminal(command: String) {
     
-    /*let script = """
-    tell application "Terminal"
-        activate
-        delay 1
-        do script "ls"
-    end tell
-    """
+    let task = Process()
+    let pipe = Pipe()
     
-    print("Trying to execute\n\(script)")
-
-    var error: NSDictionary?
-    if let scriptObject = NSAppleScript(source: script) {
-        if let output: NSAppleEventDescriptor? = scriptObject.executeAndReturnError(&error) {
-            print(output?.stringValue ?? "no value in output")
-        } else if (error != nil) {
-            print("error: \(String(describing: error))")
-        }
-    }*/
+    task.standardOutput = pipe
+    task.standardError = pipe
+    task.arguments = ["-a Terminal"]
+    task.launchPath = "/usr/bin/open"
+    task.standardInput = nil
+    task.launch()
     
     print(command)
     
