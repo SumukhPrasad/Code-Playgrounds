@@ -7,18 +7,21 @@
 
 import Foundation
 
-func executeCommandInNewTerminal(command: String) {
+func executeCommandInNewTerminal(file: String) {
     
-    let task = Process()
-    let pipe = Pipe()
+    let chmod_process = Process()
+    chmod_process.launchPath = "/bin/chmod"
+    chmod_process.arguments = ["+x", file]
+    chmod_process.launch()
+    chmod_process.waitUntilExit()
     
-    task.standardOutput = pipe
-    task.standardError = pipe
-    task.arguments = ["-a Terminal"]
-    task.launchPath = "/usr/bin/open"
-    task.standardInput = nil
-    task.launch()
     
-    print(command)
+    let process = Process()
+    process.launchPath = "/usr/bin/env"
+    process.arguments = ["open", "-a", "Terminal", file]
+    process.launch()
+    process.waitUntilExit()
+    
+    print(file)
     
 }

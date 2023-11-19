@@ -15,7 +15,7 @@ func createTemporarySHFile(content: String, command: String) -> URL? {
     
     let computedFileURL = strURL?[idx...]
     
-    let filePath = createTemporaryTextFile(content: "\(command) \(computedFileURL!)")
+    let filePath = createTemporaryTextFile(content: "\(command) \(computedFileURL!); echo \"Press RETURN to exit.\"; read junk")
 
     return filePath
 }

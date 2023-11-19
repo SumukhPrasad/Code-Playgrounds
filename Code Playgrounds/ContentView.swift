@@ -79,7 +79,7 @@ private extension ContentView {
         
         let computedFileURL = strURL?[idx...]
         if (fileURL != nil) {
-            executeCommandInNewTerminal(command: "sh \(computedFileURL!)")
+            executeCommandInNewTerminal(file: "\(computedFileURL!)")
         }
     }
 }
