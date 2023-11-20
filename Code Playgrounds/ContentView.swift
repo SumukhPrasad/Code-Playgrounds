@@ -20,7 +20,7 @@ struct ContentView: View {
         VStack {
             EditorView(code: $code, language: $lang).frame(minHeight: 480)
             
-            HStack(
+            /*HStack(
                     alignment: .center,
                     spacing: 10
                 ) {
@@ -33,7 +33,7 @@ struct ContentView: View {
                             VisualEffectView(material: .hudWindow, blendingMode: .behindWindow)
                         }
                     })
-                }.padding(10)
+                }.padding(10)*/
             
         }.frame(minWidth: 640)
         
