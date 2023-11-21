@@ -20,15 +20,6 @@
 		8CBA37D82B026C1200A9CE88 /* Code_PlaygroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37D72B026C1200A9CE88 /* Code_PlaygroundsTests.swift */; };
 		8CBA37E22B026C1200A9CE88 /* Code_PlaygroundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37E12B026C1200A9CE88 /* Code_PlaygroundsUITests.swift */; };
 		8CBA37E42B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37E32B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift */; };
-		8CBA37F52B027D8D00A9CE88 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */; };
-		8CBA37F62B027D8D00A9CE88 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */; };
-		8CBA37F72B027D8D00A9CE88 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */; };
-		8CBA37F92B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */; };
-		8CBA37FA2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */; };
-		8CBA37FB2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */; };
-		8CBA37FD2B027F4300A9CE88 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */; };
-		8CBA37FE2B027F4300A9CE88 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */; };
-		8CBA37FF2B027F4300A9CE88 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +56,6 @@
 		8CBA37DD2B026C1200A9CE88 /* Code PlaygroundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code PlaygroundsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBA37E12B026C1200A9CE88 /* Code_PlaygroundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_PlaygroundsUITests.swift; sourceTree = "<group>"; };
 		8CBA37E32B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_PlaygroundsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; tabWidth = 5; usesTabs = 1; };
-		8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Modifier+FloatingPanel.swift"; sourceTree = "<group>"; };
-		8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,15 +101,6 @@
 			path = EditorView;
 			sourceTree = "<group>";
 		};
-		8C870E232B0327A700140FFA /* FloatingPanel */ = {
-			isa = PBXGroup;
-			children = (
-				8CBA37F42B027D8D00A9CE88 /* FloatingPanel.swift */,
-				8CBA37F82B027EC400A9CE88 /* Modifier+FloatingPanel.swift */,
-			);
-			path = FloatingPanel;
-			sourceTree = "<group>";
-		};
 		8C870E272B03643000140FFA /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,11 +135,9 @@
 			children = (
 				8C6FDEAB2B04523B00B689B0 /* CommandRunner */,
 				8C870E272B03643000140FFA /* Preferences */,
-				8C870E232B0327A700140FFA /* FloatingPanel */,
 				8C870E202B03277700140FFA /* EditorView */,
 				8CBA37C52B026C1000A9CE88 /* Code_PlaygroundsApp.swift */,
 				8CBA37C72B026C1000A9CE88 /* ContentView.swift */,
-				8CBA37FC2B027F4300A9CE88 /* VisualEffectView.swift */,
 				8CBA37C92B026C1200A9CE88 /* Assets.xcassets */,
 				8CBA37CE2B026C1200A9CE88 /* Code_Playgrounds.entitlements */,
 				8CBA37CB2B026C1200A9CE88 /* Preview Content */,
@@ -332,16 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBA37FD2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37C82B026C1000A9CE88 /* ContentView.swift in Sources */,
-				8CBA37F92B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
 				8C6FDEAD2B04524A00B689B0 /* Runner.swift in Sources */,
 				8C870E222B03278A00140FFA /* EditorView.swift in Sources */,
 				8C870E292B03644500140FFA /* PrefView.swift in Sources */,
 				8CBA37C62B026C1000A9CE88 /* Code_PlaygroundsApp.swift in Sources */,
 				8C6FDEAF2B049E0100B689B0 /* Saver.swift in Sources */,
 				8C870E2B2B0364CC00140FFA /* GeneralPrefView.swift in Sources */,
-				8CBA37F52B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBA37F62B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
-				8CBA37FE2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37D82B026C1200A9CE88 /* Code_PlaygroundsTests.swift in Sources */,
-				8CBA37FA2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,11 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBA37FF2B027F4300A9CE88 /* VisualEffectView.swift in Sources */,
 				8CBA37E42B026C1200A9CE88 /* Code_PlaygroundsUITestsLaunchTests.swift in Sources */,
-				8CBA37FB2B027EC400A9CE88 /* Modifier+FloatingPanel.swift in Sources */,
 				8CBA37E22B026C1200A9CE88 /* Code_PlaygroundsUITests.swift in Sources */,
-				8CBA37F72B027D8D00A9CE88 /* FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
