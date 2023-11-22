@@ -19,22 +19,6 @@ struct ContentView: View {
     var body: some View {
         VStack {
             EditorView(code: $code, language: $lang).frame(minHeight: 480)
-            
-            /*HStack(
-                    alignment: .center,
-                    spacing: 10
-                ) {
-                    Spacer()
-                    Button("show panel") {
-                        showingPanel.toggle()
-                    }
-                    .floatingPanel(isPresented: $showingPanel, content: {
-                        ZStack {
-                            VisualEffectView(material: .hudWindow, blendingMode: .behindWindow)
-                        }
-                    })
-                }.padding(10)*/
-            
         }.frame(minWidth: 640)
         
         .toolbar {
