@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C3B66552B0F7871006F314F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8C6FDEAC2B04524A00B689B0 /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
 		8C6FDEAE2B049E0100B689B0 /* Saver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
 		8C870E212B03278A00140FFA /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		8CBA37B92B026C1000A9CE88 = {
 			isa = PBXGroup;
 			children = (
+				8C3B66552B0F7871006F314F /* README.md */,
 				8CBA37C42B026C1000A9CE88 /* Code Playgrounds */,
 				8CBA37D62B026C1200A9CE88 /* Code PlaygroundsTests */,
 				8CBA37E02B026C1200A9CE88 /* Code PlaygroundsUITests */,
